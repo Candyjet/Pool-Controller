@@ -1,4 +1,11 @@
-Update README.md 
+A modified Endless Pool Remote Controller.
+Allows user-defined program, such as interval training, using a Raspberry Pi controlling the Remote Control
+
+
+
+
+
+
 It is important to note a couple of things.
 
 1. This project is not, and is unlikely to ever be, waterproof. This may seem like a massive flaw, but in reality it is not. The Remote Controller, (RC) which is normally used from the pool, does not actually talk to the pool itself. It communicates with the whiney, hydraulic power pack, which supplies the pool with hydraulic pressure. You can see the little aerial sticking out of the hydraulic pack. 
