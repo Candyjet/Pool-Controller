@@ -30,9 +30,9 @@ A Raspberry Pi Model 2 or 3
 
 A Spare Endless Pool RC
 
-2 Resistors (spec to follow)
+2 Resistors (180 Ohm)
 
-2 Optocouplers (spec to follow)
+2 Optocouplers (4N25 or 4N35)
 
 A prototyping board with GPIO header
 Some soldering skills.
@@ -47,4 +47,17 @@ Solder 4 wires. One on each end of S1 and S2. To test your soldering, short out 
 
 To survive robust handling, I put a dab of glue at the edge of the RC and glued the insulated wires to the controller at the edge. Soldering is not a mechanical joint!
 
-To be Continued....# Pool-Controller
+The image Pool Wiring shows the correct soldering needed to the remote controller, using conventional colours, ie red for Positive, black for ground.
+
+The image optocoupler wiring shows how to connect the optocoupler to both the remote controller at the top of the image, and the pi GPIO outputs at the bottom. Orientation of the optocoupler is given by the text written on them ie wire it with the writing as shown.
+
+I have uploaded 2 programs running python3.
+
+Newdemo is purely to test your wiring. If correct, the blue led on the remote will come on 4 times in total.
+Newacg7 will run the program. The norm setting seems to be better than easy.  I am still adjusting the timing on the easy settings.
+
+I have used GPIO ports 12 and 24 in the programs. Port 24 increases the speed of the pool. Port 12 decreases the speed.
+
+
+
+
