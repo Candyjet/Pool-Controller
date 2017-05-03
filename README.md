@@ -58,6 +58,10 @@ Newacg7 will run the program. The norm setting seems to be better than easy.  I 
 
 I have used GPIO ports 12 and 24 in the programs. Port 24 increases the speed of the pool. Port 12 decreases the speed.
 
+Feel free to contact me at candyjet200@gmail.com.
+
+Tony G
+
 
 
 
