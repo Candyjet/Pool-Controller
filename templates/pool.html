@@ -1,0 +1,44 @@
+<!doctype html>
+<title>Pool Control</title>
+<font size="6">
+{% block content %}
+
+<form action="{{ url_for('workout') }}" method="post">
+<font size="6">
+
+Current Speed <input type="number" name="currentSpeedMinutes" min="1" max="4" 
+value={{ speed.minutes }} >
+:<input type="number" name="currentSpeedSeconds" min="0" max="59"
+value={{ speed.seconds }}>
+<br>
+Number of intervals <input type="number" name="intervals" min="1" max="20" value="2">
+<br>
+
+Work speed <input type="number" name="workSpeedMinutes" min="1" max="4" value="1">
+:<input type="number" name="workSpeedSeconds" min="0" max="59" value="24">
+Duration <input type="number" name="workDurationMinutes" min="0" max="4" value="1">
+:<input type="number" name="workDurationSeconds" min="0" max="59" step="5" value="30">
+<br>
+
+Rest speed <input type="number" name="restSpeedMinutes" min="1" max="4" value="1">
+:<input type="number" name="restSpeedSeconds" min="0" max="59" value="50">
+Duration <input type="number" name="restDurationMinutes" min="0" max="4" value="1">
+:<input type="number" name="restDurationSeconds" min="0" max="59" step="5" value="30">
+<br>
+
+<p>
+change time: 
+initial <input type="number" name="initial" min="0" max="99" value="45">/100s
+<br>
+delta <input type="number" name="delta" min="0" max="99" value="62">/100s
+<br>
+steps per batch <input type="number" name="batchSteps" value="3">
+<br>
+break between batches <input type="number" name="batchBreakTime" value="80">/100s
+</p>
+<input type="submit">
+</font>
+
+</form>
+{% endblock %}
+</font>

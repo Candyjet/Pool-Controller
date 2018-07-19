@@ -1,0 +1,22 @@
+<!doctype html>
+<title>Workout</title>
+<meta http-equiv='refresh' content='5' >
+<body>
+<font size="6">
+<p><a href="{{ url_for('stop') }}" >Stop/New</a></p>
+
+{% for interval in intervals %}
+  <div><p>
+  {% if interval.current %}
+    <b>
+  {% endif %}
+
+  {{ interval.type }} for {{ interval.duration }} at speed {{ interval.speed }} /100yd
+
+  {% if interval.current %}
+    </b>
+  {% endif %}
+  </p></div>
+{% endfor %}
+</font>
+</body>
